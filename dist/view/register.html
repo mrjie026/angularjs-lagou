@@ -1,0 +1,18 @@
+<div class="register ta-c">
+    <form name="form">
+        <div class="position-r">
+            <input ng-model="user.name" name="phone" validator="required,phone" class="d-b" type="number" placeholder="请输入手机号">
+        </div>
+        <div class="position-r">
+            <input ng-model="user.password" name="password" validator="required,password" class="d-b" type="password" placeholder="请输入密码">
+        </div>
+
+        <div class="message-warp clearfix ">
+            <input ng-model="user.code" name="code" text="number" validator="required" class="fl" placeholder="短信验证码">
+            <span ng-click="send_time?1==1:send()" class="message fr {{send_time?'disabled':''}}" ng-bind="send_time?send_time : '发送短信'"></span>
+        </div>
+
+        <button class="login-btn" ui-sref="login">登陆</button>
+        <button validation-submit="form" ng-click="send_time?'':submit()" class="register-btn">注册</button>
+    </form>
+</div>

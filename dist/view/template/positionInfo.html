@@ -1,0 +1,6 @@
+<div class="bg-w positionInfo">
+    <p><span ng-bind="position.name"></span> <span class="improtColor" ng-bind="position.salaryName"></span></p>
+    <p><span ng-bind="position.cityName"></span> <span ng-bind="position.experience"></span> <span ng-bind="position.education"></span></p>
+    <p ng-bind="position.benefit"></p>
+    <img ng-show="isLogin" ng-click="favorite()" class="info-star-icon" ng-src="{{imagePath}}">
+</div>

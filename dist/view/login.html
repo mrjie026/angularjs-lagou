@@ -1,0 +1,12 @@
+<div class="login ta-c">
+    <form name="form">
+        <div class="position-r">
+            <input class="d-b" name="phone" validator="required,phone" ng-model="user.phone" type="number" placeholder="请输入手机号">
+        </div>
+        <div class="position-r">
+            <input class="d-b" name="password" validator="required,password" ng-model="user.password" type="password" placeholder="请输入密码">
+        </div>
+        <button class="login-btn" validation-submit="form" ng-click="submit()">登陆</button>
+        <button class="register-btn" ui-sref="register">注册</button>
+    </form>
+</div>
